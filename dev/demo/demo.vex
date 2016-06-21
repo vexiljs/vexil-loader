@@ -1,0 +1,21 @@
+<template>
+  <div class="claz">hi</div>
+  <input id="uid">
+</template>
+
+<script>
+import foo from './foo.js'
+let bar = () => {
+  return 11
+}
+export default {
+  foo,
+  bar: bar(),
+}
+</script>
+
+<style>
+div {
+  color: red;
+}
+</style>
