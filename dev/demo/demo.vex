@@ -1,6 +1,8 @@
 <template>
-  <div class="claz">hi</div>
-  <input id="uid">
+  <div class="claz">
+    <i>hi</i>
+    <input id="uid">
+  </div>
 </template>
 
 <script>
