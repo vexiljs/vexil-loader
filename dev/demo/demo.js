@@ -59,7 +59,7 @@
 	
 	var __VEXIL_SCRIPT__;
 	__VEXIL_SCRIPT__ = __webpack_require__(2);
-	__VEXIL_SCRIPT__.$render = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!!/Users/longhao/百度云同步盘/coding/vexil-loader/lib/selector.js?type=hs!/Users/longhao/百度云同步盘/coding/vexil-loader/dev/demo/demo.vex\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	__VEXIL_SCRIPT__.$render = __webpack_require__(4);
 	module.exports = __VEXIL_SCRIPT__;
 	__webpack_require__(5);
 
@@ -96,7 +96,14 @@
 
 
 /***/ },
-/* 4 */,
+/* 4 */
+/***/ function(module, exports) {
+
+	
+	module.exports=function render(h){return h('div',{'class':'claz'},[h('i',{},['hi']),h('input',{'id':'uid'},[])])};
+
+
+/***/ },
 /* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
