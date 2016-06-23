@@ -100,7 +100,7 @@
 /***/ function(module, exports) {
 
 	
-	module.exports=function render(h){return h('div',{'class':'claz'},[h('i',{},['hi']),h('input',{'id':'uid'},[])])};
+	module.exports=function render(h){return h('div',{class:function($){return 'claz '+($.clazz)}},[h('i',{},['hi']),h('input',{id:'uid'},[])])};
 
 
 /***/ },

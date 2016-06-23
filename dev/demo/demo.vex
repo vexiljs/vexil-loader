@@ -1,5 +1,5 @@
 <template>
-  <div class="claz">
+  <div class="claz" :class="clazz">
     <i>hi</i>
     <input id="uid">
   </div>
