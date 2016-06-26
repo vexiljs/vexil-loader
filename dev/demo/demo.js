@@ -48,7 +48,12 @@
 
 	window.onload = function () {
 	  const node = document.getElementById('demo')
-	  node.textContent = JSON.stringify(demo, null, 2)
+	  node.textContent = JSON.stringify(demo, function (key, val) {
+	    if (typeof val === 'function') {
+	      return val.toString()
+	    }
+	    return val
+	  }, 2)
 	}
 
 
@@ -59,7 +64,7 @@
 	
 	var __VEXIL_SCRIPT__;
 	__VEXIL_SCRIPT__ = __webpack_require__(2);
-	__VEXIL_SCRIPT__.$render = __webpack_require__(4);
+	__VEXIL_SCRIPT__.$jml = __webpack_require__(4);
 	module.exports = __VEXIL_SCRIPT__;
 	__webpack_require__(5);
 
@@ -99,9 +104,7 @@
 /* 4 */
 /***/ function(module, exports) {
 
-	
-	module.exports=function render(h){return h('div',{class:function($){return 'claz '+($.clazz)}},[h('i',{},['hi']),h('input',{id:'uid'},[])])};
-
+	module.exports=['template',{'*if':function($,_){return $.bar}},[['div',{class:function($,_){return 'claz '+($.clazz)},style:'color:red'},[['i',null,['hi']],['input',{id:'uid'},null]]]]]
 
 /***/ },
 /* 5 */

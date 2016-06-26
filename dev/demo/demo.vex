@@ -1,5 +1,5 @@
 <template>
-  <div class="claz" :class="clazz">
+  <div *if="bar" class="claz" :class="clazz" style="color:red">
     <i>hi</i>
     <input id="uid">
   </div>
